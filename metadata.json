@@ -1,0 +1,6 @@
+{
+  "name": "Veylora",
+  "description": "Smart Study Planner & Revision app with Pomodoro timer, spaced repetition, flashcards, analytics, and exam tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

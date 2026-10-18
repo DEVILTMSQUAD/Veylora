@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-veylora-b148e83f-a2cc-4f66-b9bb-f79b45d5923f",
+      "rules": "firestore.rules"
+    }
+  ]
+}

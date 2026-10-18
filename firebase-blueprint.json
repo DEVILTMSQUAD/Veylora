@@ -1,0 +1,71 @@
+{
+  "entities": {
+    "users": {
+      "path": "users/{userId}",
+      "description": "User profile, XP, streak, preferences and theme settings",
+      "fields": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "xp": { "type": "number" },
+        "streak": { "type": "number" },
+        "dailyGoalMinutes": { "type": "number" },
+        "selectedThemeId": { "type": "string" },
+        "language": { "type": "string" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "tasks": {
+      "path": "users/{userId}/tasks/{taskId}",
+      "description": "Daily study tasks",
+      "fields": {
+        "title": { "type": "string" },
+        "subject": { "type": "string" },
+        "priority": { "type": "number" },
+        "dueDate": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "done": { "type": "boolean" },
+        "completedDate": { "type": "string" }
+      }
+    },
+    "subjects": {
+      "path": "users/{userId}/subjects/{subjectId}",
+      "description": "Subjects and chapter syllabus",
+      "fields": {
+        "name": { "type": "string" },
+        "icon": { "type": "string" },
+        "colorHex": { "type": "string" }
+      }
+    },
+    "revisions": {
+      "path": "users/{userId}/revisions/{revisionId}",
+      "description": "Spaced repetition intervals",
+      "fields": {
+        "title": { "type": "string" },
+        "subject": { "type": "string" },
+        "stage": { "type": "number" },
+        "dueDate": { "type": "string" },
+        "chapterKey": { "type": "string" }
+      }
+    },
+    "flashcards": {
+      "path": "users/{userId}/flashcards/{flashcardId}",
+      "description": "User flashcards for active recall",
+      "fields": {
+        "subject": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "box": { "type": "number" },
+        "dueDate": { "type": "string" }
+      }
+    },
+    "exams": {
+      "path": "users/{userId}/exams/{examId}",
+      "description": "Target exam dates",
+      "fields": {
+        "name": { "type": "string" },
+        "date": { "type": "string" }
+      }
+    }
+  }
+}
